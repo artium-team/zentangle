@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transition-effect.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <!-- Icons support -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LaTex support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+    <!-- Chart support -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="presentation-area">
+            <section class="presentation">
+
+                <div class="slide ef1 show">
+                    <div class="content grid center">
+                        <h1 class="title">
+                            Zen &emsp; &emsp; <br /> &emsp; &emsp; tangle
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="slide ef2">
+                    <div class="heading">
+                        Zentangle là gì?
+                    </div>
+                    <div class="content grid">
+                        <div style="display: flex;">
+                            <img src="https://t3.ftcdn.net/jpg/01/19/67/60/360_F_119676055_Dyo7aB5o7mANmCcc8yjoD7RSr8TREtnI.jpg"
+                                alt="">
+                            <img
+                                src="https://zentangle.com/cdn/shop/files/FrontTileBegin-HomePage_2048x.jpg?v=1613695312">
+                            <img src="https://bloximages.newyork1.vip.townnews.com/pmg-sc.com/content/tncms/assets/v3/editorial/9/84/984577dd-7d75-56cb-8c61-ab0158a4fac5/642b133772781.image.jpg"
+                                alt="">
+                        </div>
+                        <p class="title">
+                            Zentangle mang lại cho ta sự tập trung và tính sáng tạo. Ai cũng có thể vẽ được ở bất kì đâu
+                            và không hề tốn kém hay rắc rối. Bạn hoàn toàn không có lên kế hoạch sẽ vẽ thế nào cho bức
+                            tranh, để rồi cuối cùng ta có một tác phẩm hoàn toàn bất ngờ.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide ef3">
+                    <div class="heading">
+                        Zentangle là gì?
+                    </div>
+                    <div class="content grid center">
+                        <div style="display: flex;">
+                            <img src="https://puffy.com/cdn/shop/articles/how-to-meditate-3_1024x.jpg?v=1639635327"
+                                alt="">
+                            <img src="https://www.wikihow.com/images/thumb/9/9e/Draw-Step-1-Version-6.jpg/v4-728px-Draw-Step-1-Version-6.jpg.webp"
+                                alt="">
+                        </div>
+                        <p class="title">
+                            Zentangle được sáng tạo ra năm 2004 tại Mỹ bởi Roberts, một người hành thiền và Thomas, một
+                            người viết thư pháp
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide ef4">
+                    <div class="heading">
+                        Cách vẽ zentangle
+                    </div>
+                    <div class="content grid center">
+                        <h3>$$zentangle = {bố\,cục} * ({tỉ\,mỉ} + {kiên\,trì}) $$</h3>
+                    </div>
+                </div>
+
+                <div class="slide ef4">
+                    <div class="heading">
+                        Cách vẽ zentangle
+                    </div>
+                    <div class="content grid center">
+                        <div style="display: flex;">
+                            <iframe src="https://www.youtube.com/embed/l3QuS4Qah60?si=JGQ-qgkcWhSjJ9yT" frameborder="0"
+                            style="width: 80vw; height: 80vh;"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slide ef5">
+                    <div class="heading">
+                        Một số ví dụ về zentangle
+                    </div>
+                    <div class="content grid center">
+                        <div style="display: flex;">
+                            <img src="https://cdn.pixabay.com/photo/2023/04/17/22/28/mandala-7933643_1280.png" alt="">
+                            <img src="https://www.mandalasforthesoul.com/media/Zentangle-Mandala-1.jpg" alt="">
+                            <img src="https://images.template.net/wp-content/uploads/2016/09/Zentangle-Capricorn-Vector.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide ef10">
+                    <div class="content grid center">
+                        <h2>Cảm ơn Thầy và các bạn <br /> đã lắng nghe!</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="counter"></section>
+
+            <section class="navigation">
+                <button id="left-btn" class="btn">
+                    <i class="fas fa-solid fa-caret-left"></i>
+                </button>
+
+                <button id="right-btn" class="btn">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="swipe.js"></script>
+    <!-- <script src="chart.js"></script> -->
+</body>
+
+</html>
